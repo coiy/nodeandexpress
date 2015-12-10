@@ -17,8 +17,6 @@ app.get('/', function(req, res){
 });
 
 app.get('/about', function(req, res){
-  var randomFortune =
-    fortuneCookies[Math.floor(Math.random() * fortuneCookies.length)];
   res.render('about', { fortune : fortune.getFortune() });
 });
 
